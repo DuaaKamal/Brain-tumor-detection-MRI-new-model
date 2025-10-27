@@ -7,7 +7,7 @@ st.set_page_config(page_title="Brain Tumor Detection", layout="centered")
  
 @st.cache_resource 
 def load_model(): 
-    return tf.keras.models.load_model("Mai10.h5") 
+    return tf.keras.models.load_model("ModelN.h5") 
  
 model = load_model() 
 class_labels = ['glioma', 'meningioma', 'no_tumor', 'pituitary'] 
@@ -122,4 +122,5 @@ st.markdown(
     </div> 
     """, 
     unsafe_allow_html=True 
+
 )
